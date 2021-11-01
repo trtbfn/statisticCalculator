@@ -1,0 +1,24 @@
+<form>
+    {{!-- when you toggle the bar it disables --}}
+    <ul>
+        <li>
+            <label for="firstBrokenStuff"> число изделий, отказавших к моменту времени t;  </label>
+            <input id="firstBrokenStuff" type="number">
+        </li>
+        <li>
+            <label for="timeIntervals">ti  - время 6езотказной  работы  i- го изделия (вводите значения через ',' Пример: 30, 32, 43)</label>
+            <input type="text" id="timeIntervals">
+        </li>
+    </ul>
+
+    <button class="btn waves-effect waves-light" type="button" id="btn">Сохранить данные</button>
+</form>
+
+
+<section style="margin-top: 15px" id="display">
+        
+        <label for="uptimeVariance">Dt*- статистическая оценка дисперсии времени безотказной работы изделия</label>
+        <div id="uptimeVariance"></div>
+        
+</section>
+

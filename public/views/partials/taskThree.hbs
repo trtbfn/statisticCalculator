@@ -1,0 +1,45 @@
+<form>
+    <ul>
+        <li>
+            <label for="testingStuff">N- число изделий, поставленных на испытания</label>
+            <input type="number" id="testingStuff">
+        </li>
+        <li>
+            <label for="firstBrokenStuff">Число изделий, отказавших к моменту времени t;  </label>
+            <input id="firstBrokenStuff" type="number">
+        </li>
+        <li>
+            <label for="secondBrokenStuff">Δn(t) - число отказавших изделий на участке времени (t, t+Δt); </label>
+            <input id="secondBrokenStuff" type="number">
+        </li>
+        <li>
+            <label for="firstTimeInterval">t - первый интервал времени</label>
+            <input type="number" id="firstTimeInterval">    
+        </li>
+        <li>
+            <label for="secondTimeInterval">Δt - второй интервал времени</label>
+            <input type="number" id="secondTimeInterval">
+        </li>
+    </ul>
+
+    <button class="btn waves-effect waves-light" type="button" id="btn">Сохранить данные</button>
+</form>
+
+
+
+<section id="display">
+    <ul>
+        <li>
+            <label for="uptimeProbability">Р*(t) - статистическая оценка вероятности безотказной работы изделия.</label>
+            <div id="uptimeProbability"></div>  
+        </li>
+        <li>
+            <label for="failureProbability ">q*(t) - статистическая оценка вероятности отказа изделия</label>
+            <div id="failureProbability"></div>
+        </li>
+        <li>
+            <label for="failureRateFreq">f*(t) - статистическая оценка частоты отказов изделия;</label>
+            <div id="failureRateFreq"></div>
+        </li>
+    </ul>   
+</section>

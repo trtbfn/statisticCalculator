@@ -1,0 +1,48 @@
+<form>
+    <ul>
+        <li>
+            <label for="testingStuff">N- число изделий, поставленных на испытания</label>
+            <input type="number" id="testingStuff">
+        </li>
+        </li>
+        <li>
+            <label for="timeInterval">Δti - время безотказной работы  i- го изделия; (Пример: 0-5 или 6-10)</label>
+            <input type="text" id="timeInterval">
+        </li>
+        <li>
+            <label for="brokenStuff">ni - количество вышедших из строя изделий в  i- ом интервале времени; </label>
+            <input type="number" id="brokenStuff">
+        </li>
+
+    </ul>
+
+  <button class="btn waves-effect waves-light" type="button" id="tableBtn">Загрузить в таблицу</button>
+  <button class="btn waves-effect waves-light" type="button" id="btn">Сохранить данные</button>
+  
+</form>
+
+<section style="margin-top: 4%" class="col"> 
+    <div class="container">
+            <div class="row">
+                <div class="result col s4">
+                <label for="uptimeVariance">Dt*- статистическая оценка дисперсии времени безотказной работы изделия</label>
+                <div id="uptimeVariance"></div>
+            </div> 
+        
+            <table  class="col s8">
+                <thead>
+                    <tr>
+                        <th>Δti, час</th>
+                        <th>ni</th>
+                    </tr>
+                </thead>
+
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+        
+    </div>         
+</section>
+
+

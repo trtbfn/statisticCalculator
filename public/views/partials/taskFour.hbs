@@ -1,0 +1,24 @@
+<form>
+    {{!-- when you toggle the bar it disables --}}
+    <ul>
+        <li>
+            <label for="testingStuff">N- число изделий, поставленных на испытания</label>
+            <input type="number" id="testingStuff">
+        </li>
+        <li>
+            <label for="timeIntervals">ti  - время 6езотказной  работы  i- го изделия (вводите значения через ',' Пример: 30, 32, 43)</label>
+            <input type="text" id="timeIntervals">
+        </li>
+    </ul>
+
+  <button class="btn waves-effect waves-light" type="button" id="btn">Сохранить данные</button>
+</form>
+
+
+<section style="margin-top: 15px" id="display">
+        {{!-- Serial values (add those values when bar with addition parameters have been toogled--}}
+    <label for="MDBF">mt* - статистическая оценка среднего времени безотказной работы изделия</label>
+    <div id="MDBF"></div>
+ 
+</section>
+

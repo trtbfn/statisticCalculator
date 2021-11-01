@@ -1,0 +1,35 @@
+<form method="post">
+    {{!-- when you toggle the bar it disables --}}
+    <ul>
+        <li>
+            <label for="testingStuff">N- число изделий, поставленных на испытания</label>
+            <input type="number" id="testingStuff" name="testingStuff">
+        </li>
+        <li>
+            <label for="firstBrokenStuff"> число изделий, отказавших к моменту времени t;  </label>
+            <input id="firstBrokenStuff" type="number" name="firstBrokenStuff">
+        </li>
+        <li>
+            <label for="fisrtTimeInterval">t - первый интервал времени</label>
+            <input type="number" id="firstTimeInterval" name="firstTimeInterval">    
+        </li>
+    </ul>
+
+    <button class="btn waves-effect waves-light" type="button" id="btn">Сохранить данные</button>
+</form>
+
+
+<section id="display">
+    <ul>
+        <li>
+            <label for="uptimeProbability">Р*(t) - статистическая оценка вероятности безотказной работы изделия.</label>
+            <div id="uptimeProbability"></div>  
+        </li>
+        <li>
+            <label for="failureProbability ">q*(t) - статистическая оценка вероятности отказа изделия</label>
+            <div id="failureProbability"></div>
+        </li>
+    </ul>
+  
+</section>
+
