@@ -2,3 +2,7 @@
     position: fixed;
     padding: 0 15%;
 }
+
+.navbar-l {
+    position: absolute;
+}
